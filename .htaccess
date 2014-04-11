@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteBase /
+RewriteRule ^(.*)_(.*)/(.*)_(.*)//?$ index.php?$1=$2&$3=$4 [L]
+RewriteRule ^(.*)_(.*)//?$ index.php?$1=$2 [L]
